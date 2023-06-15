@@ -1,7 +1,4 @@
-# midjourney-discord-api
-
-[![NPM Version](https://img.shields.io/npm/v/midjourney-discord-api.svg?style=flat)](https://www.npmjs.org/package/midjourney-discord-api)
-_midjourney-discord-api_
+# mj-reforged
 
 [Deno doc](https://deno.land/x/midjourney_discord_api)
 
@@ -10,6 +7,12 @@ and send messages to be processed by the Midjourney bot. It utilizes the same
 requests as the Discord web client, allowing seamless communication with the
 bot. To configure the library, extract an authenticated request sent to the
 Midjourney bot using your web development tools.
+
+Contributor notice: MJ Reforged is the version of the real package
+but with crucial fixes and modifications for custom needs.
+
+The real package was created by [UrielCh](https://github.com/UrielCh/midjourney-client)
+## This project is not affiliated with the real package.
 
 ## Features
 
@@ -28,23 +31,17 @@ Midjourney bot using your web development tools.
 ### NodeJS ESM or CJS
 
 ```sh
-npm install midjourney-discord-api
+npm install mj-reforged
 ```
 
 ### ESM nodeJS
 
 ```js
-import Midjourney from "midjourney-discord-api";
+import Midjourney from "mj-reforged";
 
 const cli = new Midjourney("interaction.txt");
 const msgs = await cli.getMessages();
 console.log(msgs.length + " messages visibles"); // by default get 50 messages
-```
-
-### Deno
-
-```ts
-import Midjourney from "https://deno.land/x/midjourney_discord_api/mod.ts";
 ```
 
 ## Token / ids extraction.
@@ -202,20 +199,6 @@ if (msg.canReroll()) {
 ## More Samples
 
 check all the samples [here](https://github.com/UrielCh/midjourney-client/tree/main/samples)
-
-| name                                                                                                            |  function                                           |
-| --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| [ImagineSet.ts](https://github.com/UrielCh/midjourney-client/blob/main/samples/ImagineSet.ts)                   | Call concurent /imagine function at the same time   |
-| [blendImages.ts](https://github.com/UrielCh/midjourney-client/blob/main/samples/blendImages.ts)                 | blend 2 random images                               |
-| [describeRegen.ts](https://github.com/UrielCh/midjourney-client/blob/main/samples/describeRegen.ts)             | descript an image then imagine the returned prompts |
-| [listLastMsgs.ts](https://github.com/UrielCh/midjourney-client/blob/main/samples/listLastMsgs.ts)               | list last message                                   |
-| [parseOne.ts](https://github.com/UrielCh/midjourney-client/blob/main/samples/parseOne.ts)                       | debug one message                                   |
-| [progressLogger.ts](https://github.com/UrielCh/midjourney-client/blob/main/samples/progressLogger.ts)           | a progress logger provider                          |
-| [sampleUrls.ts](https://github.com/UrielCh/midjourney-client/blob/main/samples/sampleUrls.ts)                   | samples Image url used in test script               |
-| [saveAll.ts](https://github.com/UrielCh/midjourney-client/blob/main/samples/saveAll.ts)                         | download all image from a channel                   |
-| [upscaleLast.ts](https://github.com/UrielCh/midjourney-client/blob/main/samples/upscaleLast.ts)                 | upscall the last non upscalled image                |
-| [upscaleLasthoursAgo.ts](https://github.com/UrielCh/midjourney-client/blob/main/samples/upscaleLasthoursAgo.ts) | upscall an image at a specific time                 |
-| [variantLast.ts](https://github.com/UrielCh/midjourney-client/blob/main/samples/variantLast.ts)                 | generate variante for a the last generated image    |
 
 ## Contributing
 
