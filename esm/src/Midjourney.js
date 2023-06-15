@@ -21,6 +21,8 @@ import { logger } from "../deps.js";
 import { download, filename2Mime, generateRandomString, getExistinggroup, REROLL, wait } from "./utils.js";
 import { properties, WsOpcode } from "./wsMessages.js";
 import { PWall } from "./PWall.js";
+import WebSocket from 'ws';
+
 const interactions = "https://discord.com/api/v9/interactions";
 // export type WaitOptions = Exclude<WaitOptionsProgress, 'progress'> & Partial<Pick<WaitOptionsProgress, 'progress'>>;
 export class Midjourney {
