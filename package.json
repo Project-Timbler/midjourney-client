@@ -1,0 +1,43 @@
+{
+    "module": "./esm/mod.js",
+    "main": "./script/mod.js",
+    "name": "mj-reforged",
+    "author": "Uriel Chemouni <uchemouni@gmail.com> (https://uriel.deno.dev/)",
+    "license": "MIT",
+    "funding": "https://github.com/UrielCh/midjourney-client?sponsor=1",
+    "contributors": [],
+    "description": "Midjourney client using Discord. Forked from UrielCh's project.",
+    "keywords": [
+    
+    ],
+    "homepage": "https://github.com/Wonderful-Bastard/midjourney-client",
+    "version": "1.1.0-fork",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Wonderful-Bastard/midjourney-client/midjourney-client.git"
+    },
+    "bugs": {
+      "url": "https://github.com/Wonderful-Bastard/midjourney-client/issues"
+    },
+    "engine-strict": {
+      "node": ">=18"
+    },
+    "exports": {
+      ".": {
+        "import": "./esm/mod.js",
+        "require": "./script/mod.js"
+      }
+    },
+    "scripts": {
+      "test": "node test_runner.js"
+    },
+    "dependencies": {
+      "@denodnt/logger": "1.1.1",
+      "discord-api-types": "0.37.42",
+      "@deno/shim-deno": "~0.16.1"
+    },
+    "devDependencies": {
+      "@types/node": "^20.2.5",
+      "picocolors": "^1.0.0"
+    }
+  }
