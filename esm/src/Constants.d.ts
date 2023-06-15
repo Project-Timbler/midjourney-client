@@ -1,0 +1,22 @@
+export declare const MIDJOURNEY_CHANNELS: {
+    readonly general1: "https://discord.com/channels/662267976984297473/933565701162168371";
+    readonly general2: "https://discord.com/channels/662267976984297473/941971306004504638";
+    readonly general3: "https://discord.com/channels/662267976984297473/981832774157762570";
+    readonly general4: "https://discord.com/channels/662267976984297473/984632424610824222";
+    readonly general5: "https://discord.com/channels/662267976984297473/984632500875821066";
+    readonly general6: "https://discord.com/channels/662267976984297473/984632520471633920";
+    readonly general7: "https://discord.com/channels/662267976984297473/989274712590917653";
+    readonly general8: "https://discord.com/channels/662267976984297473/989274728155992124";
+    readonly general9: "https://discord.com/channels/662267976984297473/989274745495240734";
+    readonly general10: "https://discord.com/channels/662267976984297473/989274756341706822";
+    readonly general11: "https://discord.com/channels/662267976984297473/941582479117127680";
+    readonly general12: "https://discord.com/channels/662267976984297473/995431151084773486";
+    readonly general13: "https://discord.com/channels/662267976984297473/995431172375064616";
+    readonly general14: "https://discord.com/channels/662267976984297473/995431233121161246";
+    readonly general15: "https://discord.com/channels/662267976984297473/995431473828077618";
+    readonly general16: "https://discord.com/channels/662267976984297473/995431514080813086";
+    readonly general17: "https://discord.com/channels/662267976984297473/995431544019755070";
+    readonly general18: "https://discord.com/channels/662267976984297473/995431387333152778";
+    readonly general19: "https://discord.com/channels/662267976984297473/995431305066065950";
+    readonly general20: "https://discord.com/channels/662267976984297473/995431274267279440";
+};
