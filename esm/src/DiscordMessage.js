@@ -31,6 +31,7 @@ export function extractPrompt(content, id) {
         name: "",
     };
     let extra = content;
+
     /**
      * speed first
      */
@@ -436,6 +437,11 @@ export class DiscordMessage {
                 }
             }
             else if (name === "imagine") {
+                /*const embeds = source.embeds[0];
+                console.log(embeds);*/
+                /*if(source.embeds[0].title == "Action needed to continue"){
+                    console.log(source.components[0].components);
+                }*/
                 // empty
             }
             else if (name === "blend") {

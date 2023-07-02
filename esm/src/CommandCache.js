@@ -76,14 +76,14 @@ export class CommandCache {
                 if (application_commands[0]) {
                     command = application_commands[0];
                     if (cacheFile) {
-                        await dntShim.Deno.writeTextFile(cacheFile, JSON.stringify(command, undefined, 2));
+                        //await dntShim.Deno.writeTextFile(cacheFile, JSON.stringify(command, undefined, 2));
                     }
                 }
             }
         }
         // save in memory
         if (command) {
-            this.cache[name] = command;
+            //this.cache[name] = command;
             return command;
         }
         throw Error(`Failed to get application_commands for command ${name}`);
