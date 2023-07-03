@@ -10,14 +10,14 @@
     "keywords": [
     
     ],
-    "homepage": "https://github.com/Wonderful-Bastard/midjourney-client",
+    "homepage": "https://github.com/Project-Timbler/midjourney-client",
     "version": "1.1.2-fork",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/Wonderful-Bastard/midjourney-client/midjourney-client.git"
+      "url": "git+https://github.com/Project-Timbler/midjourney-client/midjourney-client.git"
     },
     "bugs": {
-      "url": "https://github.com/Wonderful-Bastard/midjourney-client/issues"
+      "url": "https://github.com/Project-Timbler/midjourney-client/issues"
     },
     "engine-strict": {
       "node": ">=18"
