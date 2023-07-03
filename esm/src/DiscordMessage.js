@@ -105,6 +105,12 @@ export function extractPrompt(content, id) {
             result.completion = 1; // Variations are only display at completion
         }
     }
+    else if (extra.endsWith(" Variations (Strong) by")) {
+        extra = extra.substring(0, extra.length - 22);
+        if (result.completion === undefined) {
+            result.completion = 1; // Variations are only display at completion
+        }
+    }
     else if (extra.endsWith(" Upscaled (Beta) by")) {
         extra = extra.substring(0, extra.length - 19);
         if (result.completion === undefined) {
@@ -148,11 +154,13 @@ export function extractPrompt(content, id) {
             result.completion = 1; // upscall have no progress
         }
     }
+    extra = extra.trim();
     if (extra.endsWith("** -")) {
         extra = extra.substring(0, extra.length - 2);
     }
     if (extra.startsWith("**") && extra.endsWith("**") && extra.length > 4) {
         result.prompt = extra.substring(2, extra.length - 2);
+        console.log(result);
         return result;
     }
     if (id === "936929561302675456") {
